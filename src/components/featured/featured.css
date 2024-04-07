@@ -1,0 +1,39 @@
+.featured{
+  width: 100%;
+  max-width: 1024px;
+  display: flex;
+  justify-content: space-between;
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 15px;
+  z-index: 1;
+}
+
+
+.featuredItem{
+  position: relative;
+  color:white;
+  border-radius: 3px;
+  overflow: hidden;
+  height: 300px;
+  width: 550px;
+  flex:1;
+}
+.featuredImg{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 1.1s;
+  cursor: pointer;
+}
+
+.featured :hover .featuredImg{
+  transform: scale(1.1);
+}
+.featuredTitles{
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  text-transform: capitalize;
+}
+
